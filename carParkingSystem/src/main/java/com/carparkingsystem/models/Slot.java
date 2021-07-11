@@ -1,7 +1,7 @@
 package com.carparkingsystem.models;
 
 public class Slot {
-	private int slotNumber;
+	private Integer slotNumber;
 	private Car parkedCar;
 	
 	// we are making it final here cause
@@ -11,7 +11,7 @@ public class Slot {
 		this.slotNumber = slotNumber;
 	}
 
-	public int getSlotNumber() {
+	public Integer getSlotNumber() {
 		return slotNumber;
 	}
 

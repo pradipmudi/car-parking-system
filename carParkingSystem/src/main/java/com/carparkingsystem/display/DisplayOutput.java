@@ -12,5 +12,10 @@ public class DisplayOutput {
 		
 	}
 
+	public void notFound() {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }

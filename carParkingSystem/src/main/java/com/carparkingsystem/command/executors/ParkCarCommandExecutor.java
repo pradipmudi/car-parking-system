@@ -8,9 +8,6 @@ import com.parkinglotsystem.service.ParkingService;
 
 public class ParkCarCommandExecutor extends CommandExecutor {
 	
-	
-	
-	
 	public ParkCarCommandExecutor(ParkingService parkingLotService, DisplayOutput displayOutput) {
 		super(parkingLotService, displayOutput);
 		// TODO Auto-generated constructor stub
