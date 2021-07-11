@@ -26,17 +26,17 @@ Create a runnable JAR with **com.carparkingsystem.ParkingLotSystem.java** in **L
 
  **Examples** : 
  
-**1. java -jar jar_name.jar Create_parking_lot 6**
+**java -jar jar_name.jar Create_parking_lot 6**
 
-**2. java -jar jar_name.jar Park KA-01-HH-1234 driver_age 21**
+**Park KA-01-HH-1234 driver_age 21**
 
-**3. java -jar jar_name.jar Slot_numbers_for_driver_of_age 21**
+**Slot_numbers_for_driver_of_age 21**
 
-**4. java -jar jar_name.jar Slot_number_for_car_with_number PB-01-HH-1234**
+**Slot_number_for_car_with_number PB-01-HH-1234**
 
-**5. java -jar jar_name.jar Vehicle_registration_number_for_driver_of_age 18**
+**Vehicle_registration_number_for_driver_of_age 18**
 
-**6. java -jar jar_name.jar Leave 2**
+**Leave 2**
 
-**7. java -jar jar_name.jar Terminate**
+**Terminate**
 
