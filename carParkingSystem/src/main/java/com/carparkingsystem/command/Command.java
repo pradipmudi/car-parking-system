@@ -25,7 +25,7 @@ public class Command {
         .filter(token -> (token.length() > 0)).collect(Collectors.toList());
 
     if (commandParametersList.size() == 0) {
-      throw new RuntimeException();
+      throw new RuntimeException("Invalid Command");
     }
 
     commandName = commandParametersList.get(0).toLowerCase();

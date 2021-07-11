@@ -2,19 +2,18 @@ package com.carparkingsystem.display;
 
 public class DisplayOutput {
 
-	public void printWithNewLine(String string) {
-		// TODO Auto-generated method stub
+	public void printWithNewLine(String messageToPrint) {
+		System.out.println(messageToPrint);
 		
 	}
 
 	public void parkingLotFull() {
-		// TODO Auto-generated method stub
+		System.out.println("Parking lot is full!!");
 		
 	}
 
 	public void notFound() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Not found!!");
 	}
 
 
