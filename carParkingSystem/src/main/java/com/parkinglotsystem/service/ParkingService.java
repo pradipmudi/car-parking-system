@@ -36,10 +36,11 @@ public class ParkingService {
 	  }
 
 
-	  public void makeSlotFree(final Integer slotNumber) {
+	  public Slot makeSlotFree(final Integer slotNumber) {
 	    validateParkingLot();
-	    parkingLot.makeSlotFree(slotNumber);
+	    Slot freedSlot = parkingLot.makeSlotFree(slotNumber);
 	    parkingStrategy.addSlot(slotNumber);
+	    return freedSlot;
 	  }
 
 

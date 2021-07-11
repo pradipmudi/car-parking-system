@@ -13,7 +13,7 @@ public class DisplayOutput {
 	}
 
 	public void notFound() {
-		System.out.println("Not found!!");
+		System.out.println("No parked car matches the query");
 	}
 
 

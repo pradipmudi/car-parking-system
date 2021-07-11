@@ -20,7 +20,7 @@ public class ParkCarCommandExecutor extends CommandExecutor {
 		final Car car = new Car(command.getParams().get(0), command.getParams().get(2));
 		try {
 			final Integer slot = parkingLotService.park(car);
-			displayOutput.printWithNewLine("Allocated slot number: " + slot);
+			displayOutput.printWithNewLine("Car with vehicle registration number '"+car.getCarNumber()+"' has been parked at slot number " + slot);
 		} catch (Exception exception) {
 			displayOutput.parkingLotFull();
 		}
