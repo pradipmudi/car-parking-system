@@ -40,3 +40,4 @@ Create a runnable JAR with **com.carparkingsystem.ParkingLotSystem.java** in **L
 
 **Terminate**
 
+Terminate to exit the command line argument
