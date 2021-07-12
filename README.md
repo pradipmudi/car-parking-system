@@ -7,8 +7,30 @@ A command line based car parking system implementation
 * Maven version used: 4.0.0
 * Clone the project from GIT repo and import the project as "Existing Maven Project"(If you are using Eclipse)
 * All the dependencies are metioned in the **'pom.xml'** file, after cloning the project simply clean and build it
-* Dependencies used in the project : 
+* Build configurations and Dependencies used in the project : 
+
+
+        
   
+        <build>
+          <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>libs/</classpathPrefix>
+                            <mainClass>
+                                com.carparkingsystem.ParkingLotSystem
+                            </mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+          </plugins>
+        </build>
         <dependencies>
           <dependency>
             <groupId>junit</groupId>
@@ -22,9 +44,19 @@ A command line based car parking system implementation
 ### How to create the command line based runnable jar?
 Create a runnable JAR with **com.carparkingsystem.ParkingLotSystem.java** in **Launch Configuration**
 
+## Build from CLI
+* Open terminal
+* Go to project directory
+* Run "mvn clean"
+* Run "mvn install"
+* Runnable jar will be created in the "target" directory
+
+
 #### How to run from command line ?
 
 * Go to the target directory of the jar and run as shown in the examples : 
+
+
 
  ## Examples :
  First run the jar, then keep entering the commands:
