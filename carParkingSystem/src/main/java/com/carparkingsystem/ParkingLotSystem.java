@@ -18,7 +18,7 @@ public class ParkingLotSystem
     	final DisplayOutput displayOutput = new DisplayOutput();
         final ParkingService parkingLotService = new ParkingService();
         final CommandExecutorFactory commandExecutorFactory = new CommandExecutorFactory(parkingLotService);
-        new CommandProcessor(commandExecutorFactory, displayOutput).process();
+        new CommandProcessor(commandExecutorFactory, displayOutput);
     }
 
 	

@@ -15,7 +15,7 @@ import com.carparkingsystem.display.DisplayOutput;
 import com.parkinglotsystem.service.ParkingService;
 
 public class CommandExecutorFactory {
-	private Map<String, CommandExecutor> commandExecutorMap = new HashMap<>();
+	private static Map<String, CommandExecutor> commandExecutorMap = new HashMap<>();
 	
 	public CommandExecutorFactory(final ParkingService parkingLotService) {
 		final DisplayOutput displayOutput = new DisplayOutput();
@@ -44,6 +44,7 @@ public class CommandExecutorFactory {
 	 * @return Command executor.
 	 */
 	public CommandExecutor getCommandExecutor(final Command command) {
+//		System.out.println(command);
 		final CommandExecutor commandExecutor = commandExecutorMap.get(command.getCommandName());
 		if (commandExecutor == null) {
 			throw new RuntimeException("Invalid Command");

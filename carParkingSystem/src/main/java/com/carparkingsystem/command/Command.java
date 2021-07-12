@@ -33,4 +33,10 @@ public class Command {
     parameters = commandParametersList;
   }
 
+  @Override
+  public String toString() {
+	  return "Command [commandName=" + commandName + ", parameters=" + parameters + "]";
+  }
+
+  
 }
