@@ -6,13 +6,39 @@
   <artifactId>carParkingSystem</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
+  
 
   <name>carParkingSystem</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+  
+    <build>
+	  <plugins>
+		  <plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-jar-plugin</artifactId>
+			    <configuration>
+			        <archive>
+			            <manifest>
+			                <addClasspath>true</addClasspath>
+			                <classpathPrefix>libs/</classpathPrefix>
+			                <mainClass>
+			                    com.carparkingsystem.ParkingLotSystem
+			                </mainClass>
+			            </manifest>
+			        </archive>
+			    </configuration>
+			</plugin>
+		  
+	  </plugins>
+	</build>
+    
+
 
   <dependencies>
     <dependency>
