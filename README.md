@@ -3,6 +3,8 @@
 A command line based car parking system implementation 
 
 ## How to configure the project?
+* Java version used: 1.8
+* Maven version used: 4.0.0
 * Clone the project from GIT repo and import the project as "Existing Maven Project"(If you are using Eclipse)
 * All the dependencies are metioned in the **'pom.xml'** file, after cloning the project simply clean and build it
 * Dependencies used in the project : 
@@ -24,9 +26,12 @@ Create a runnable JAR with **com.carparkingsystem.ParkingLotSystem.java** in **L
 
 * Go to the target directory of the jar and run as shown in the examples : 
 
- **Examples** : 
+ ## Examples :
+ First run the jar, then keep entering the commands:
  
-**java -jar jar_name.jar Create_parking_lot 6**
+**java -jar jar_name.jar**
+
+**Create_parking_lot 6**
 
 **Park KA-01-HH-1234 driver_age 21**
 
