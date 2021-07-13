@@ -37,7 +37,7 @@ public class CarNumbersByDriverAgeCommandExecutor extends CommandExecutor {
 	    } else {
 	      final String result =
 	          slotsByDriverAge.stream()
-	              .map(slot -> slot.getParkedCar().toString())
+	              .map(slot -> slot.getParkedCar().getCarNumber().toString())
 	              .collect(Collectors.joining(", "));
 	      displayOutput.printWithNewLine(result);
 	    }

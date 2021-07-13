@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
 Built-By: GOLU
 Build-Jdk: 12.0.1
+Main-Class: com.carparkingsystem.ParkingLotSystem
 Created-By: Maven Integration for Eclipse
 
