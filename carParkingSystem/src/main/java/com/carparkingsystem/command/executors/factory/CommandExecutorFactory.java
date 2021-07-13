@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.carparkingsystem.command.Command;
+import com.carparkingsystem.command.executors.CarNumbersByDriverAgeCommandExecutor;
 import com.carparkingsystem.command.executors.CommandExecutor;
 import com.carparkingsystem.command.executors.CreateParkingLotCommandExecutor;
 import com.carparkingsystem.command.executors.LeaveCommandExecutor;
@@ -34,6 +35,9 @@ public class CommandExecutorFactory {
 		commandExecutorMap.put(
 				Constants.COMMAND_SLOT_NUMBERS_FOR_DRIVER_OF_AGE,
 				new SlotNumberByDriverAgeCommandExecutor(parkingLotService, displayOutput));
+		commandExecutorMap.put(
+				Constants.COMMAND_VEHICLE_REGISTRATION_NUMBER_FOR_DRIVER_OF_AGE,
+				new CarNumbersByDriverAgeCommandExecutor(parkingLotService, displayOutput));
 	}
 	
 	/**

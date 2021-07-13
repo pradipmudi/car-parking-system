@@ -26,10 +26,11 @@ public class CommandProcessor {
 	    while (true) {
 	      final String input = reader.readLine();
 	      final Command command = new Command(input);
-	      processCommand(command, commandExecutorFactory);
 	      if (command.getCommandName().equals(Constants.COMMAND_TERMINATE)) {
-	        break;
+	    	  displayOutput.printWithNewLine("Terminating the program...exiting the command line interface....");
+	    	  break;
 	      }
+	      processCommand(command, commandExecutorFactory);
 	    }
 	}
 	

@@ -3,6 +3,7 @@ package com.carparkingsystem.command.executors;
 import com.carparkingsystem.command.Command;
 import com.carparkingsystem.constants.Constants;
 import com.carparkingsystem.display.DisplayOutput;
+import com.carparkingsystem.models.Car;
 import com.carparkingsystem.models.Slot;
 import com.carparkingsystem.validators.IntegerValidator;
 import com.parkinglotsystem.service.ParkingService;
@@ -29,8 +30,8 @@ public class LeaveCommandExecutor extends CommandExecutor {
 	@Override
 	public void executeCommand(Command command) {
 		final int slotNum = Integer.parseInt(command.getParams().get(0));
-	    Slot freedSlot = parkingLotService.makeSlotFree(slotNum);
-	    displayOutput.printWithNewLine("Slot number " + slotNum + " vacated, the car with vehicle registration number '"+freedSlot.getParkedCar().getCarNumber()+"' left the space, the driver of the car was of age "+freedSlot.getParkedCar().getDriverAge());
+	    Car unregisteredCar = parkingLotService.makeSlotFree(slotNum);
+	    displayOutput.printWithNewLine("Slot number " + slotNum + " vacated, the car with vehicle registration number '"+unregisteredCar.getCarNumber()+"' left the space, the driver of the car was of age "+unregisteredCar.getDriverAge());
 	}
 
 }

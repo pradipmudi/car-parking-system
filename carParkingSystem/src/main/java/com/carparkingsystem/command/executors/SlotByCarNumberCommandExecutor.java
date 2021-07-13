@@ -3,6 +3,7 @@ package com.carparkingsystem.command.executors;
 import java.util.List;
 
 import com.carparkingsystem.command.Command;
+import com.carparkingsystem.constants.Constants;
 import com.carparkingsystem.display.DisplayOutput;
 import com.carparkingsystem.models.Slot;
 import com.parkinglotsystem.service.ParkingService;
@@ -18,7 +19,7 @@ public class SlotByCarNumberCommandExecutor extends CommandExecutor {
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return null;
+		return Constants.COMMAND_SLOT_NUMBER_FOR_CAR_WITH_NUMBER;
 	}
 
 	@Override

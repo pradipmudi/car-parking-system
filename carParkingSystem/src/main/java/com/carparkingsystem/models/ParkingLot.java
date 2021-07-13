@@ -45,9 +45,10 @@ public class ParkingLot {
     return slot;
   }
 
-  public Slot makeSlotFree(final Integer slotNumber) {
+  public Car makeSlotFree(final Integer slotNumber) {
     final Slot slot = getSlot(slotNumber);
+    Car car = slot.getParkedCar();
     slot.unregisterCar();
-    return slot;
+    return car;
   }
 }
