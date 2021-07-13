@@ -150,3 +150,11 @@ Vehicle_registration_number_for_driver_of_age 18
 **Output**
 ------------
 No parked car matches the query
+
+**Input:**
+------------
+Terminate
+
+**Output**
+------------
+Terminating the program...exiting the command line interface....
