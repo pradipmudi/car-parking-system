@@ -41,10 +41,10 @@ A command line based car parking system implementation
         </dependencies>
   
 
-### How to create the command line based runnable jar?
+### How to create the command line based runnable jar from IDE like eclipse?
 Create a runnable JAR with **com.carparkingsystem.ParkingLotSystem.java** in **Launch Configuration**
 
-## Build from CLI
+## Or Build from CLI
 * Open terminal
 * Go to project directory
 * Run "mvn clean"
